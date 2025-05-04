@@ -1,0 +1,480 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Great Vibes', cursive, sans-serif;
+  background-color: #f0f8ff; /* pastel blue */
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #d0e8f2;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #003366;
+  font-family: "Segoe Script", cursive;
+}.location-button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+
+.video-container video {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Couple Names */
+.names-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #e6f3fb; /* soft pastel blue background */
+  color: #003366;
+}
+
+.HarshShubh {
+  font-family: 'Monotype Corsiva', 'Lucida Calligraphy', 'Great Vibes', cursive;
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 0.5rem 0;
+  color: #003366;
+}
+
+.slogan {
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Caveat", cursive;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #6e49cb; /* gentle purple */
+}
+
+.stdate {
+  margin: 0;
+  font-family: "Delius", cursive;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #555;
+}
+
+.date {
+  margin: 0;
+  font-family: "Caveat", cursive;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #6e49cb;
+}
+
+.savetheDate_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.Save {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #6e49cb;
+  color: white;
+  font-weight: 800;
+  font-family: 'Open Sans Bold', 'Roboto Bold', 'Montserrat Bold', sans-serif;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.Save:hover {
+  background-color: #5733aa;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .HarshShubh {
+    font-size: 2.3rem;
+  }
+
+  .slogan {
+    font-size: 1.5rem;
+  }
+
+  .stdate, .date {
+    font-size: 1.1rem;
+  }
+
+  .Save {
+    width: 80%;
+    max-width: 250px;
+    font-size: 1rem;
+  }
+
+  .savetheDate_container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+/* Countdown Timer */
+.countdown-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.countdown-box {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.count {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4b2c2c;
+}
+
+.label {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+#countdown-timer {
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.names {
+  font-size: 2.5rem;
+  color: #4b2c2c;
+}
+
+.heading {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #070707;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.event_img {
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  border-radius: 10px;
+}
+
+.wedding-functions {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.function-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 500px;
+  height: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.Muhurtmedh { background-image: url(images/Muhurthmedh.png); }
+.mehandi { background-image: url(images/Mehandi.jpg); }
+.chuda { background-image: url(images/bangles.jpg); }
+.gavdev { background-image: url(images/Gavde.jpg); }
+.sangeet { background-image: url(images/sangeet.jpg); }
+.haldi { background-image: url(images/Haldi.jpg); }
+.weeding { background-image: url(images/wedding.jpg); }
+
+.card-details {
+  background-image: url(images/bgimg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 80px 40px;
+  text-align: center;
+  color: #4b2c2c;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin: auto;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+}
+.Muhurtmedh,
+.mehandi,
+.chuda,
+.gavdev,
+.sangeet,
+.haldi,
+.weeding {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 500px;
+  height: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.function-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.map-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #0077b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.map-button:hover {
+  background-color: #023e8a;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 1024px) {
+  .card-details {
+    padding: 60px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .function-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .function-card {
+    width: 90%;
+  }
+
+  .card-details {
+    width: 95%;
+    padding: 40px 20px;
+  }
+
+  .Muhurtmedh,
+  .mehandi,
+  .chuda,
+  .gavdev,
+  .sangeet,
+  .haldi,
+  .weeding {
+    height: 300px;
+    max-width: 100%;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .function-card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .card-details {
+    padding: 30px 15px;
+    font-size: 0.9rem;
+  }
+
+  .map-button {
+    width: 100%;
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .names {
+    font-size: 2rem;
+  }
+
+  .Muhurtmedh,
+  .mehandi,
+  .chuda,
+  .gavdev,
+  .sangeet,
+  .haldi,
+  .weeding {
+    height: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .Save,
+  .map-button {
+    width: 80%;
+    max-width: 250px;
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+
+  .savetheDate_container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Save,
+  .map-button {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 8px 12px;
+    text-align: center;
+  }
+}
+
+/* msg */
+.wrapper {
+    overflow: hidden;
+    margin-top: 3rem;
+  }
+  .halfCircle {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 100% 100%;
+  border-top-right-radius: 100% 100%;
+  background-color: #d0e8f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.message {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', cursive;
+  color: #003366;
+  line-height: 1.6;
+}
+
+.bride-groom-section .heading {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.brouche {
+  margin-top: 0;
+  width: 150px;
+  height: 70px;
+}
+
+.bride-groom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.people-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;   /* Stack img and h3 vertically */
+  align-items: center;      /* Center them horizontally */
+  padding: 20px;
+}
+
+.person h3 {
+  margin: 8px 0 0 0;
+  font-style: italic;
+  font-family: 'Delius', cursive;
+}
+
+.person img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
