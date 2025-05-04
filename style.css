@@ -478,3 +478,41 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+.carousel-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  display: none;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-image.active {
+  display: block;
+}
+
+/* Mobile friendly */
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .carousel-image {
+    height: auto;
+  }
+}

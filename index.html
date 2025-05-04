@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Harshal weds Shubham </title>
+    
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,8 +22,15 @@
         📍 Location
       </a>
     </nav>
- 
 
+
+  <div class="video-container">
+      <video autoplay muted loop controls playsinline>
+        <source src="images/Video .mp4" type="video/mp4" />
+       
+
+      </video>
+    </div>
 <div class="names-section">
       <h1 class="HarshShubh">Harshal & Shubham</h1>
       <h3 class="slogan">We are getting married..!</h3>
@@ -41,13 +49,18 @@
       </div>
       
     
-        <div class="video-container">
-      <video autoplay muted loop controls playsinline>
-        <source src="images/Video .mp4" type="video/mp4" />
-       
+      
+     <div class="carousel-container">
+  <div class="carousel">
+   
+    <img src="images/slide2.JPG" alt="Slide 3" class="carousel-image">
+     <img src="images/slide8.jpg" alt="Slide 3" class="carousel-image"> <img src="images/slide4.JPG" alt="Slide 3" class="carousel-image"> <img src="images/slide5.JPG" alt="Slide 3" class="carousel-image">
+      <img src="images/slide6.JPG" alt="Slide 3" class="carousel-image">
+       <img src="images/slide7.JPG" alt="Slide 3" class="carousel-image">
+        <img src="images/slide8.JPG" alt="Slide 3" class="carousel-image">
 
-      </video>
-    </div>
+  </div>
+</div>
  <div class="bride-groom-section">
       <h1 class="heading">Harshal Weds Shubham</h1>
       <img src="images/Flower_img.jpg" alt="" class="brouche" />
@@ -305,6 +318,23 @@
       </div>
     `;
   }, 1000);
+
+  const images = document.querySelectorAll('.carousel-image');
+  let currentIndex = 0;
+
+  function showImage(index) {
+    images.forEach(img => img.classList.remove('active'));
+    images[index].classList.add('active');
+  }
+
+  function autoSlide() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
+
+  setInterval(autoSlide, 3000); // Change image every 3 seconds
+
+
 </script>
 
   </body>
